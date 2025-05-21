@@ -1,4 +1,4 @@
- # [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=Hi%F0%9F%91%8B%2C+I'm+lazy_forever!;Welcome+to+my+homepage!)](https://github.com/lazy-forever)
+ # [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=Hi%F0%9F%91%8B%2C+I'm+GH2050!;Welcome+to+my+homepage!)](https://github.com/lazy-forever)
 
  <!-- profile logo 个人资料徽标 -->
   <div align="center">
@@ -31,17 +31,17 @@ Here are some ideas to get you started:
 
 <!-- Snake Code Contribution Map 贪吃蛇代码贡献图 -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/lazy-forever/lazy-forever/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/lazy-forever/lazy-forever/output/github-contribution-grid-snake.svg">
-  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/lazy-forever/lazy-forever/output/github-contribution-grid-snake.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/GH2050/GH2050/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/GH2050/GH2050/output/github-contribution-grid-snake.svg">
+  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/GH2050/GH2050/output/github-contribution-grid-snake.svg">
 </picture>
 <!--
 <img src='https://github-readme-stats.vercel.app/api?username=lazy-forever&show_icons=true&theme=tokyonight'>
 -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=lazy-forever&show_icons=true&theme=tokyonight">
-  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=lazy-forever&show_icons=true&theme=buefy">
-  <img alt="github stats" src="https://github-readme-stats.vercel.app/api?username=lazy-forever&show_icons=true&theme=buefy">
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=GH2050&show_icons=true&theme=tokyonight">
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=GH2050&show_icons=true&theme=buefy">
+  <img alt="github stats" src="https://github-readme-stats.vercel.app/api?username=GH2050&show_icons=true&theme=buefy">
 </picture>
 
 
