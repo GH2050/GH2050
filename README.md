@@ -26,25 +26,6 @@
 
 ---
 
-<!-- ═══════════════ ABOUT ME ═══════════════ -->
-
-<img align="right" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="180" alt="coding cat"/>
-
-### 🐱 About Me
-
-```text
-🔭  Currently working on  ... awesome open-source projects
-🌱  Currently learning    ... everything interesting
-👯  Looking to collaborate on ... cool ideas
-💬  Ask me about          ... anything! I'm happy to chat
-📫  Reach me at           ... my GitHub profile
-⚡  Fun fact              ... I love coffee and cats ☕🐱
-```
-
-<br clear="right"/>
-
----
-
 <!-- ═══════════════ TECH STACK ═══════════════ -->
 
 <h2 align="center">🛠️ Tech Stack</h2>
@@ -53,19 +34,11 @@
 
 **Languages**
 
-<img src="https://skillicons.dev/icons?i=python,javascript,typescript,go,java,cpp,rust,bash&perrow=8" alt="Languages"/>
+<img src="https://skillicons.dev/icons?i=md,yaml,bash&perrow=8" alt="Languages"/>
 
-**Frontend**
+**Tools & Platform**
 
-<img src="https://skillicons.dev/icons?i=react,vue,nextjs,html,css,tailwind,figma&perrow=8" alt="Frontend"/>
-
-**Backend & DevOps**
-
-<img src="https://skillicons.dev/icons?i=nodejs,docker,kubernetes,aws,gcp,nginx,linux,git&perrow=8" alt="Backend & DevOps"/>
-
-**Databases**
-
-<img src="https://skillicons.dev/icons?i=mysql,postgresql,mongodb,redis&perrow=8" alt="Databases"/>
+<img src="https://skillicons.dev/icons?i=github,git,githubactions,vscode&perrow=8" alt="Tools & Platform"/>
 
 </div>
 
@@ -92,30 +65,6 @@
     </td>
   </tr>
 </table>
-
-</div>
-
----
-
-<!-- ═══════════════ TROPHIES ═══════════════ -->
-
-<h2 align="center">🏆 GitHub Trophies</h2>
-
-<div align="center">
-
-<img src="https://github-profile-trophy.vercel.app/?username=GH2050&theme=tokyonight&no-frame=true&no-bg=true&margin-w=6&row=1&column=7" alt="GitHub Trophies"/>
-
-</div>
-
----
-
-<!-- ═══════════════ ACTIVITY GRAPH ═══════════════ -->
-
-<h2 align="center">📈 Contribution Activity</h2>
-
-<div align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=GH2050&bg_color=0d1117&color=a855f7&line=a855f7&point=ec4899&area=true&hide_border=true" alt="Contribution Activity Graph"/>
 
 </div>
 
