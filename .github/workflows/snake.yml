@@ -25,6 +25,65 @@ jobs:
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
+      - name: Customize animation (cat head + mice contributions)
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          files = [
+              Path("dist/github-contribution-grid-snake.svg"),
+              Path("dist/github-contribution-grid-snake-dark.svg"),
+          ]
+
+          contribution_pattern = re.compile(
+              r'<rect class="c ([^"]+)" x="([0-9.]+)" y="([0-9.]+)" rx="2" ry="2"/>'
+          )
+          head_pattern = re.compile(
+              r'<rect class="s s0"[^>]*/><rect class="s s1"[^>]*/><rect class="s s2"[^>]*/><rect class="s s3"[^>]*/>'
+          )
+
+          def fmt(value: float) -> str:
+              text = f"{value:.2f}"
+              return text.rstrip("0").rstrip(".")
+
+          def mouse_path(match: re.Match[str]) -> str:
+              klass = match.group(1)
+              x = float(match.group(2))
+              y = float(match.group(3))
+              d = (
+                  f"M {fmt(x + 3.2)} {fmt(y + 7.0)} "
+                  f"a 2.8 2.3 0 1 0 5.6 0 "
+                  f"a 2.8 2.3 0 1 0 -5.6 0 "
+                  f"M {fmt(x + 5.2)} {fmt(y + 5.0)} "
+                  f"a 1.2 1.2 0 1 0 0.01 0 "
+                  f"M {fmt(x + 7.6)} {fmt(y + 5.0)} "
+                  f"a 1.2 1.2 0 1 0 0.01 0 "
+                  f"M {fmt(x + 3.0)} {fmt(y + 8.4)} "
+                  f"q -1.7 0.7 -2.5 2.2"
+              )
+              return f'<path class="c {klass}" d="{d}"/>'
+
+          cat_head = (
+              '<path class="s s0" d="M 1 15 L 1 7 L 4 3 L 5 0.8 L 8 3 L 11 0.8 L 12 3 L 15 7 L 15 15 Z"/>'
+              '<path class="s s1" d="M 2 14.2 L 2 7.3 L 4.5 3.9 L 5.3 2.2 L 8 4.2 L 10.7 2.2 L 11.5 3.9 L 14 7.3 L 14 14.2 Z"/>'
+              '<path class="s s2" d="M 3 13.4 L 3 7.8 L 5 4.8 L 5.7 3.5 L 8 5.3 L 10.3 3.5 L 11 4.8 L 13 7.8 L 13 13.4 Z"/>'
+              '<path class="s s3" d="M 3.6 12.7 L 3.6 8.2 L 5.4 5.4 L 8 6.6 L 10.6 5.4 L 12.4 8.2 L 12.4 12.7 Z"/>'
+          )
+
+          for svg_path in files:
+              content = svg_path.read_text(encoding="utf-8")
+              content, mouse_count = contribution_pattern.subn(mouse_path, content)
+              content, head_count = head_pattern.subn(cat_head, content, count=1)
+
+              if mouse_count == 0 or head_count != 1:
+                  raise RuntimeError(
+                      f"Unexpected SVG format in {svg_path}: mouse_count={mouse_count}, head_count={head_count}"
+                  )
+
+              svg_path.write_text(content, encoding="utf-8")
+          PY
+
       - name: Push SVGs to the "output" branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
