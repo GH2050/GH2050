@@ -53,7 +53,7 @@
 <table>
   <tr>
     <td>
-      <img src="https://github-readme-stats.vercel.app/api?username=GH2050&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a855f7&icon_color=a855f7&text_color=ffffff&ring_color=a855f7" alt="GitHub Stats"/>
+      <img src="https://github-readme-stats.vercel.app/api?username=GH2050&show_icons=true&include_all_commits=true&count_private=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a855f7&icon_color=a855f7&text_color=ffffff&ring_color=a855f7" alt="GitHub Stats"/>
     </td>
     <td>
       <img src="https://streak-stats.demolab.com/?user=GH2050&theme=tokyonight&hide_border=true&background=0d1117&ring=a855f7&fire=ec4899&currStreakLabel=a855f7" alt="GitHub Streak"/>
@@ -61,7 +61,7 @@
   </tr>
   <tr>
     <td colspan="2" align="center">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=GH2050&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a855f7&text_color=ffffff&langs_count=8" alt="Top Languages"/>
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=GH2050&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a855f7&text_color=ffffff&langs_count=20" alt="Top Languages"/>
     </td>
   </tr>
 </table>
@@ -71,19 +71,16 @@
 ---
 
 <!-- ═══════════════ CAT SNAKE ANIMATION ═══════════════ -->
-<!--
-  The SVGs below are versioned in this repository to avoid broken links
-  before the workflow-generated "output" branch is initialized.
--->
+<!-- The SVGs below are loaded from the workflow-generated "output" branch (real contribution data). -->
 
 <h2 align="center">🐱 Cat's Contribution Journey 🐭</h2>
 
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/github-contribution-grid-snake-dark.svg"/>
-  <source media="(prefers-color-scheme: light)" srcset="./assets/github-contribution-grid-snake.svg"/>
-  <img alt="Cat chasing mice across the contribution grid" src="./assets/github-contribution-grid-snake.svg"/>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/GH2050/GH2050/output/github-contribution-grid-snake-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/GH2050/GH2050/output/github-contribution-grid-snake.svg"/>
+  <img alt="Cat chasing mice across the contribution grid" src="https://raw.githubusercontent.com/GH2050/GH2050/output/github-contribution-grid-snake.svg"/>
 </picture>
 
 </div>
