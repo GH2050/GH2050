@@ -36,11 +36,14 @@ jobs:
               Path("dist/github-contribution-grid-snake-dark.svg"),
           ]
 
+          # Use attribute lookaheads so matching works even if attribute order changes.
           contribution_pattern = re.compile(
-              r'<rect class="c ([^"]+)" x="([0-9.]+)" y="([0-9.]+)" rx="2" ry="2"/>'
+              r'<rect(?=[^>]*class="c ([^"]+)")(?=[^>]*x="([0-9.]+)")(?=[^>]*y="([0-9.]+)")[^>]*/>'
           )
+          # snk currently renders the head as 4 layered rects (s0..s3); replace that block with cat-head paths.
           head_pattern = re.compile(
-              r'<rect class="s s0"[^>]*/><rect class="s s1"[^>]*/><rect class="s s2"[^>]*/><rect class="s s3"[^>]*/>'
+              r'<rect class="s s0"[^>]*/>.*?<rect class="s s1"[^>]*/>.*?<rect class="s s2"[^>]*/>.*?<rect class="s s3"[^>]*/>',
+              re.S,
           )
 
           def fmt(value: float) -> str:
@@ -78,7 +81,9 @@ jobs:
 
               if mouse_count == 0 or head_count != 1:
                   raise RuntimeError(
-                      f"Unexpected SVG format in {svg_path}: mouse_count={mouse_count}, head_count={head_count}"
+                      f"Unexpected SVG format in {svg_path}: mouse_count={mouse_count} (expected > 0), "
+                      f"head_count={head_count} (expected == 1). "
+                      "Review the generated SVG structure and update regex patterns if Platane/snk output changed."
                   )
 
               svg_path.write_text(content, encoding="utf-8")
