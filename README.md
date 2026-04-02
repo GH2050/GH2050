@@ -32,13 +32,17 @@
 
 <div align="center">
 
-**Languages**
+**English**
 
 <img src="https://skillicons.dev/icons?i=md,yaml,bash&perrow=8" alt="Languages"/>
 
 **Tools & Platform**
 
-<img src="https://skillicons.dev/icons?i=github,git,githubactions,vscode&perrow=8" alt="Tools & Platform"/>
+<img src="https://img.shields.io/badge/GitHub%20Copilot-181717?style=for-the-badge&logo=githubcopilot&logoColor=white" alt="GitHub Copilot"/>
+<img src="https://img.shields.io/badge/Cursor-000000?style=for-the-badge&logo=cursor&logoColor=white" alt="Cursor"/>
+<img src="https://img.shields.io/badge/Claude-4D4DFF?style=for-the-badge&logo=claude&logoColor=white" alt="Claude"/>
+<img src="https://img.shields.io/badge/Gemini-4285F4?style=for-the-badge&logo=googlegemini&logoColor=white" alt="Gemini"/>
+<img src="https://img.shields.io/badge/ChatGPT-10A37F?style=for-the-badge&logo=openai&logoColor=white" alt="ChatGPT"/>
 
 </div>
 
